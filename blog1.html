@@ -23,6 +23,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/venobox.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
 </head>
 
 
@@ -372,13 +379,6 @@
     <script src="./assets/js/venobox.min.js"></script>
     <script src="./assets/js/clipboard.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  </script>
 
 </body>
 
