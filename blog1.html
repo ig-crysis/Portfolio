@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Title -->
+    <title>Anant Bhatnagar-Projects</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo1.png" type="image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/venobox.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+
+
+<body class="relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light">
+    <div class="mx-auto flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
+        <!-- Header -->
+        <header class="sticky top-0 z-50">
+            <div class="">
+                <div class="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark">
+                    <!-- Logo -->
+                    <a href="index.html" class="inline-flex items-center gap-3 px-3 text-2xl font-semibold text-dark dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6">
+                            <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
+                        </svg>
+
+                        <span>CODEx<span class="text-primary">CRYSIS</span> </span>
+                    </a>
+
+                    <!-- Navigation menu -->
+                    <ul class="hidden flex-1 flex-wrap items-center justify-center lg:flex">
+                        <li class="group/menu-item ">
+                            <a href="index.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                    <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
+                                    <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="group/menu-item ">
+                            <a href="about.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                    <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                    <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />
+                                    <path d="M5.5 16.708v-.041a3.333 3.333 0 0 1 3.333-3.334h3.334a3.333 3.333 0 0 1 3.333 3.334v.041" />
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="group/menu-item active">
+                            <a href="portfolio.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                    <path d="m3.503 5.998 5.949-2.591a.8.8 0 0 1 1.058.439l4.103 9.918a.834.834 0 0 1-.428 1.087l-5.948 2.59a.8.8 0 0 1-1.059-.438l-4.103-9.92a.833.833 0 0 1 .428-1.085ZM13 3.333h.833a.833.833 0 0 1 .834.834v2.916M17.167 5c.22.093.433.18.64.263a.833.833 0 0 1 .442 1.092l-1.915 4.478" />
+                                </svg>
+                                <span>Works</span>
+                            </a>
+                        </li>
+                        <li class="group/menu-item ">
+                            <a href="contact.html" class="group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                    <path d="M6.667 7.5h6.666m-6.666 3.333h5M15 3.333a2.5 2.5 0 0 1 2.5 2.5V12.5A2.5 2.5 0 0 1 15 15h-4.167l-4.166 2.5V15H5a2.5 2.5 0 0 1-2.5-2.5V5.833a2.5 2.5 0 0 1 2.5-2.5h10Z" />
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Header buttons -->
+                    <div class="hidden items-center gap-4 lg:flex">
+                        <!-- Theme appearance toggler -->
+                        <div class="">
+                            <button type="button" class="hs-dark-mode group flex h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:hidden dark:text-gray-400 dark:hover:text-gray-500" data-hs-theme-click-value="dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                                    <path d="M11.8 3a8.656 8.656 0 0 0-4.523 1.28A8.918 8.918 0 0 0 4.04 7.756a9.167 9.167 0 0 0 .44 9.24 8.863 8.863 0 0 0 3.553 3.137 8.633 8.633 0 0 0 4.624.824 8.69 8.69 0 0 0 4.381-1.723 8.973 8.973 0 0 0 2.892-3.78c.3-.738-.419-1.48-1.142-1.179a5.604 5.604 0 0 1-3.892.15 5.74 5.74 0 0 1-3.083-2.431 5.956 5.956 0 0 1-.848-3.886c.17-1.357.8-2.61 1.78-3.541l.069-.072c.485-.567.099-1.488-.668-1.488h-.234l-.06-.005L11.8 3Z" />
+                                </svg>
+                            </button>
+                            <button type="button" class="hs-dark-mode group hidden h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:flex dark:text-[#FD7E41] dark:hover:bg-dark dark:hover:text-[#FD7E41]" data-hs-theme-click-value="light">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6">
+                                    <path d="M10 15.833a.833.833 0 0 1 .828.736l.005.098v.833a.833.833 0 0 1-1.66.097l-.006-.097v-.833a.833.833 0 0 1 .833-.834Zm5.26-1.741.08.069.582.583a.833.833 0 0 1-1.1 1.248l-.078-.07-.583-.583a.833.833 0 0 1 1.015-1.306l.085.059Zm-9.42.068a.833.833 0 0 1 .068 1.1l-.069.08-.583.582a.833.833 0 0 1-1.248-1.1l.07-.078.583-.583a.833.833 0 0 1 1.178 0ZM3.333 9.167a.833.833 0 0 1 .098 1.66l-.098.006H2.5a.833.833 0 0 1-.098-1.66l.098-.006h.833Zm14.167 0a.833.833 0 0 1 .098 1.66l-.098.006h-.833a.833.833 0 0 1-.098-1.66l.098-.006h.833ZM5.178 4.008l.078.07.583.583a.833.833 0 0 1-1.1 1.247l-.078-.069-.583-.583A.833.833 0 0 1 5.092 3.95l.086.058Zm10.744.069a.833.833 0 0 1 .07 1.1l-.07.079-.583.583a.833.833 0 0 1-1.247-1.1l.069-.078.583-.584a.833.833 0 0 1 1.178 0ZM10 1.667a.833.833 0 0 1 .828.736l.005.097v.833a.833.833 0 0 1-1.66.098l-.006-.098V2.5A.833.833 0 0 1 10 1.667Zm0 4.166a4.167 4.167 0 1 1-4.163 4.348L5.833 10l.004-.18A4.167 4.167 0 0 1 10 5.832Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
+                            <span>Let's Talk</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
+                                <path d="M17.5 11.667v-5h-5" />
+                                <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Navigation toggler -->
+                    <button type="button" class="text-dark transition dark:text-white/70 lg:hidden" data-hs-overlay="#mobile-menu" aria-controls="mobile-menu" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <svg class="h-9 w-9 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hs-overlay fixed bottom-0 start-0 top-0 z-[60] hidden h-full w-64 -translate-x-full transform overflow-y-auto bg-white transition-all duration-300 hs-overlay-open:translate-x-0 dark:bg-black [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar]:w-2">
+            <div class="flex h-full flex-col justify-between gap-5 p-5">
+                <div class="">
+                    <!-- Logo -->
+                    <a href="index.html" class="inline-flex items-center gap-3 px-3 text-2xl font-semibold text-dark dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6">
+                            <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
+                        </svg>
+
+                        <span>CODEx<span class="text-primary">CRYSIS</span> </span>
+                    </a>
+                </div>
+
+                <ul class="mt-4 flex flex-1 flex-col gap-2">
+                    <li class="group/menu-item ">
+                        <a href="index.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
+                                <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="group/menu-item ">
+                        <a href="about.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />
+                                <path d="M5.5 16.708v-.041a3.333 3.333 0 0 1 3.333-3.334h3.334a3.333 3.333 0 0 1 3.333 3.334v.041" />
+                            </svg>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="group/menu-item active">
+                        <a href="portfolio.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                <path d="m3.503 5.998 5.949-2.591a.8.8 0 0 1 1.058.439l4.103 9.918a.834.834 0 0 1-.428 1.087l-5.948 2.59a.8.8 0 0 1-1.059-.438l-4.103-9.92a.833.833 0 0 1 .428-1.085ZM13 3.333h.833a.833.833 0 0 1 .834.834v2.916M17.167 5c.22.093.433.18.64.263a.833.833 0 0 1 .442 1.092l-1.915 4.478" />
+                            </svg>
+                            <span>Works</span>
+                        </a>
+                    </li>
+                    <li class="group/menu-item ">
+                        <a href="contact.html" class="group inline-flex w-full items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" class="h-6 w-6 text-[#8991A7] transition group-hover:text-dark group-[.active]/menu-item:text-dark dark:group-hover:text-white dark:group-[.active]/menu-item:text-white">
+                                <path d="M6.667 7.5h6.666m-6.666 3.333h5M15 3.333a2.5 2.5 0 0 1 2.5 2.5V12.5A2.5 2.5 0 0 1 15 15h-4.167l-4.166 2.5V15H5a2.5 2.5 0 0 1-2.5-2.5V5.833a2.5 2.5 0 0 1 2.5-2.5h10Z" />
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="flex flex-col gap-3">
+                    <button data-hs-theme-click-value="dark" class="hs-dark-mode flex w-full items-center justify-start gap-2 rounded-lg px-4 py-2 text-center text-sm text-muted transition hover:bg-light hs-dark-mode-active:hidden dark:hover:bg-dark dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                            <path d="M11.8 3a8.656 8.656 0 0 0-4.523 1.28A8.918 8.918 0 0 0 4.04 7.756a9.167 9.167 0 0 0 .44 9.24 8.863 8.863 0 0 0 3.553 3.137 8.633 8.633 0 0 0 4.624.824 8.69 8.69 0 0 0 4.381-1.723 8.973 8.973 0 0 0 2.892-3.78c.3-.738-.419-1.48-1.142-1.179a5.604 5.604 0 0 1-3.892.15 5.74 5.74 0 0 1-3.083-2.431 5.956 5.956 0 0 1-.848-3.886c.17-1.357.8-2.61 1.78-3.541l.069-.072c.485-.567.099-1.488-.668-1.488h-.234l-.06-.005L11.8 3Z" />
+                        </svg>
+
+                        <span>Change appearance</span>
+                    </button>
+
+                    <button data-hs-theme-click-value="light" class="hs-dark-mode hidden w-full items-center justify-start gap-2 rounded-lg px-4 py-2 text-center text-sm text-muted transition hover:bg-light hs-dark-mode-active:flex dark:hover:bg-dark dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                            <path d="M10 15.833a.833.833 0 0 1 .828.736l.005.098v.833a.833.833 0 0 1-1.66.097l-.006-.097v-.833a.833.833 0 0 1 .833-.834Zm5.26-1.741.08.069.582.583a.833.833 0 0 1-1.1 1.248l-.078-.07-.583-.583a.833.833 0 0 1 1.015-1.306l.085.059Zm-9.42.068a.833.833 0 0 1 .068 1.1l-.069.08-.583.582a.833.833 0 0 1-1.248-1.1l.07-.078.583-.583a.833.833 0 0 1 1.178 0ZM3.333 9.167a.833.833 0 0 1 .098 1.66l-.098.006H2.5a.833.833 0 0 1-.098-1.66l.098-.006h.833Zm14.167 0a.833.833 0 0 1 .098 1.66l-.098.006h-.833a.833.833 0 0 1-.098-1.66l.098-.006h.833ZM5.178 4.008l.078.07.583.583a.833.833 0 0 1-1.1 1.247l-.078-.069-.583-.583A.833.833 0 0 1 5.092 3.95l.086.058Zm10.744.069a.833.833 0 0 1 .07 1.1l-.07.079-.583.583a.833.833 0 0 1-1.247-1.1l.069-.078.583-.584a.833.833 0 0 1 1.178 0ZM10 1.667a.833.833 0 0 1 .828.736l.005.097v.833a.833.833 0 0 1-1.66.098l-.006-.098V2.5A.833.833 0 0 1 10 1.667Zm0 4.166a4.167 4.167 0 1 1-4.163 4.348L5.833 10l.004-.18A4.167 4.167 0 0 1 10 5.832Z" />
+                        </svg>
+
+                        <span>Change appearance</span>
+                    </button>
+
+                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
+                        <span>Let's Talk</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
+                            <path d="M17.5 11.667v-5h-5" />
+                            <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- Portfolio -->
+            <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark col-span-full lg:p-10">
+
+                <div class="">
+                    <h2 class="text-3xl font-semibold leading-tight text-dark dark:text-light lg:text-[40px] lg:leading-tight">
+                        Check Out My Latest <span class="text-primary">Blog</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-muted dark:text-light/70">
+                        This blog is primarily focusing on <b>How to use Sentient Project's AI Model, Dobby for Windows</b><br>
+                        Thanks to <a href="https://x.com/o7xabz" target="_blank"><u>o7xabz</u></a> for publishing its Guide in Ukranian
+                    </p>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="mt-10 lg:mt-14">
+                    <div class="mt-6 space-y-6">
+                        <div class="">
+                            <h2 class="text-3xl font-semibold leading-tight text-dark dark:text-light lg:text-[40px] lg:leading-tight text-center">
+                                Launch of Sentient Project's AI model,<br><span class="text-primary">Dobby AI</span>, on Windows
+                            </h2>
+                            <div class="relative overflow-hidden rounded-t-lg flex items-center justify-center">
+                                <img src="assets/img/dobby.gif" alt="" class="h-50 w-50 rounded-t-lg object-cover object-top transition" />
+
+                                <a href="assets/img/dobby.gif" data-gall="project-gallry-1" class="project-gallery-link absolute left-1/2 top-1/2 grid h-5 w-5 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
+                                        <path d="M10 4.167v11.666M4.167 10h11.666" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="mt-10 text-xl font-semibold leading-tight text-dark dark:text-light lg:text-[20px] lg:leading-tight text-center">Hello! Today we will talk about how to properly deploy the Dobby AI model locally on Windows.</h3>
+                            <p class="mt-6 text-4xl">Lets Move onto the Guide:</p>
+                            <h3 class="font-semibold text-3xl">1. Loading the model</h3>
+                            <p>Go to the <a href="https://huggingface.co/"><u>Huggingface</u></a> website .<br>
+                                ┃ If you don't have an account , create one. ┃<br>
+                                Go to the <a href="https://huggingface.co/SentientAGI"><u>Sentient page.</u></a>
+                                    <img src="assets/img/sen1.jpg" style="width: 760px; height: 400px; object-fit: cover;" />
+                                <h3 class="font-semibold text-3xl">Go to Models:</h3>
+                                <img src="assets/img/sen2.jpg" alt="sen2" style="width: 760px; height: 400px; object-fit: cover;" />
+                                <h3 class="font-semibold mt-4 text-3xl">Go to the "Files and versions" page.</h3>
+                                <img src="assets/img/sen3.jpg" style="width: 760px; height: 400px; object-fit: cover;"/>
+                                Create a folder on your PC <b>dobby_model</b> (dobby-8b-unhinged-q4_k_m.gguf) and download the selected model there.
+                            </p>
+                            <h3 class="font-semibold mt-4 text-3xl">2. Installing Ollama</h3>
+                            <p><b>Ollama</b> is a tool (program) for running local models.<br>
+                            Download and install it from this <a href="https://ollama.com/" target="_blank" class="text-blue-600">link</a> Once installed, run the application — it will open<br>
+                            in PowerShell. The application will automatically prompt you for the following<br>
+                            command to install. If this does not happen, review the <a href="https://github.com/ollama/ollama?tab=readme-ov-file" class="text-blue-600">installation details.</a>
+                            <img src="assets/img/sen4.jpg" style="width: 760px; height: 400px; object-fit: cover;"/>
+                            </p>
+                            <h3 class="font-semibold mt-4 text-3xl">3. Create a file, “ Modelfile “</h3>
+                            <p><b>Modelfile</b> is a simple file that tells Ollama where to get your model from.<br>
+                                To do this, open any text editor (I use Notepad++ ),<b>Modelfile</b> without the<br>
+                                <b>.txt</b> extension , and save it in the same folder as your model.<br><br>
+                                Enter the following line into the file and save the changes:</p>
+                                <div class="bg-gray-900 rounded-lg w-80 text-white text-center">
+                                    <h3>FROM ./dobby-8b-unhinged-q4_k_m.gguf</h3>
+                                </div>
+                                
+                            <img src="assets/img/sen5.jpg" style="width: 760px; object-fit: cover;"/>
+                            <h3 class="font-semibold mt-4 text-3xl">4. Model launch</h3>
+                            <p>When the <b>Modelfile</b> is ready, use the console to navigate to the folder where the model<br>
+                                and file are located, <b>for example:</b>
+                                
+                                <div class="bg-gray-900 rounded-lg w-80 text-white">
+                                    <h3 class="ml-2">cd D:\dobby_model</h3>
+                                </div>
+                                Enter the following command:<br>
+                                <div class="bg-gray-900 rounded-lg w-80 text-white text-center">
+                                    <h3>ollama create dobby-unhinged -f Modelfile</h3>
+                                </div>
+                                <b>dobby-unhinged–</b> this is the name you give to the model (you can choose any, the main thing is to use it the same way later).<br>
+                                <b>-f Modelfile</b> indicates that we are taking instructions from your Modelfile.<br><br>
+                                After executing this command, Ollama will "build" its internal database about the model.<br> This may take some time, depending on the file size and the power of your computer.<br><br>
+                                Now that the model is "created", you can run it:</p>
+                                <div class="bg-gray-900 rounded-lg w-80 text-white text-center">
+                                    <h3>ollama run dobby-unhinged</h3>
+                                </div>
+                                <img src="assets/img/sen6.jpg" style="width: 760px; object-fit: cover;" class="mt-5"/>
+                                <h3 class="font-semibold mt-4 text-3xl text-center"><hr>Thank you</h3>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-10 flex items-center justify-center gap-1.5">
+                        <!-- Previous Button -->
+                        <a href="portfolio-page1.html" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                            <span aria-hidden="true" class="sr-only">Previous</span>
+                        </a>
+                    
+                        <!-- Page Buttons -->
+                        <a href="portfolio.html" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary active">
+                            1
+                        </a>
+                        <a href="portpage2.html" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary">
+                            2
+                        </a>
+                        <a href="" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary">
+                            3
+                        </a>
+                        <a href="" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary">
+                            4
+                        </a>
+                    
+                        <!-- Next Button -->
+                        <a href="portfolio-page2.html" class="inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-light text-center text-dark transition hover:border-primary hover:text-primary focus:outline-none focus:ring-2 disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-muted dark:hover:border-primary dark:hover:text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                            <span aria-hidden="true" class="sr-only">Next</span>
+                        </a>
+                    </nav>
+                    
+
+                <!-- Contact -->
+                <div class="mt-10 lg:mt-14">
+                    <div class="group flex gap-6 overflow-hidden rounded-lg bg-light p-6 dark:bg-dark-2">
+                        <div class="relative flex min-w-full shrink-0 animate-infinite-scroll gap-6 group-hover:[animation-play-state:paused]">
+                            <a href="contact.html" class="relative inline-block whitespace-nowrap text-3xl font-medium text-muted transition before:mr-3 before:content-['\2022'] hover:text-dark dark:text-muted dark:hover:text-white md:text-[40px]">
+                                Let's 👋 Work Together
+                            </a>
+                            <a href="contact.html" class="relative inline-block whitespace-nowrap text-3xl font-medium text-muted transition before:mr-3 before:content-['\2022'] hover:text-dark dark:text-muted dark:hover:text-white md:text-[40px]">
+                                Let's 👋 Work Together
+                            </a>
+                        </div>
+                        <div class="relative flex min-w-full shrink-0 animate-infinite-scroll gap-6 group-hover:[animation-play-state:paused]">
+                            <a href="contact.html" class="relative inline-block whitespace-nowrap text-3xl font-medium text-muted transition before:mr-3 before:content-['\2022'] hover:text-dark dark:text-muted dark:hover:text-white md:text-[40px]">
+                                Let's 👋 Work Together
+                            </a>
+                            <a href="contact.html" class="relative inline-block whitespace-nowrap text-3xl font-medium text-muted transition before:mr-3 before:content-['\2022'] hover:text-dark dark:text-muted dark:hover:text-white md:text-[40px]">
+                                Let's 👋 Work Together
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <p class="text-sm dark:text-light/70">
+                @Anant Bhatnagar
+                <a href="#" class="inline-block border-b border-b-transparent text-primary transition hover:border-b-primary hover:text-blue-600">
+                CODExCRYSIS
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <div class="shapes">
+        <div class="fixed -left-1/2 -top-1/2 -z-10 animate-spin-very-slow xl:-left-[20%] xl:-top-1/3">
+            <img src="assets/img/gradient-1.png" alt="" class="" />
+        </div>
+
+        <div class="fixed -right-[50%] top-[10%] -z-10 animate-spin-very-slow xl:-right-[15%] xl:top-[10%]">
+            <img src="assets/img/gradient-2.png" alt="" class="" />
+        </div>
+
+        <div class="move-with-cursor fixed left-[10%] top-[20%] -z-10">
+            <img src="assets/img/object-3d-1.png" alt="" class="" />
+        </div>
+
+        <div class="move-with-cursor fixed bottom-[20%] right-[10%] -z-10">
+            <img src="assets/img/object-3d-2.png" alt="" class="" />
+        </div>
+    </div>
+
+    <script src="./assets/js/preline.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/venobox.min.js"></script>
+    <script src="./assets/js/clipboard.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
