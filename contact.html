@@ -425,8 +425,8 @@
       .then(() => {
         // Send auto-reply to user
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_AUTOREPLY_ID, {
-          to_name: contactForm.elements["from_name"].value,
-          to_email: contactForm.elements["from_email"].value
+          to_name: contactForm.elements["name"].value,
+          to_email: contactForm.elements["email"].value
         });
 
         statusBox.textContent = "✅ Message sent successfully!";
@@ -450,5 +450,6 @@
 </script>
 </body>
 </html>
+
 
 
