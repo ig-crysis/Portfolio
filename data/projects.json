@@ -19,7 +19,7 @@
             "image": "assets/img/projects/asclow-0331d8e3.gif",
             "link": "https://ai-sustainability-copilot.vercel.app/",
             "linkLabel": "Visit Site",
-            "featured": true,
+            "featured": false,
             "published": true,
             "id": "ai-sustainability-copilot",
             "order": 2
