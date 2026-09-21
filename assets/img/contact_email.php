@@ -3,8 +3,18 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+// NOTE: this file is currently unused — contact.html sends via EmailJS
+// client-side instead. Kept for reference only. If you revive it, copy
+// mail-config.sample.php to mail-config.php (gitignored) first.
+$mailConfigPath = __DIR__ . '/../../mail-config.php';
+if (!file_exists($mailConfigPath)) {
+    http_response_code(500);
+    die('Mail is not configured. Copy mail-config.sample.php to mail-config.php.');
+}
+$mailConfig = require $mailConfigPath;
+
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 if(isset($_POST['dataSubmit'])) {
     $name = $_POST['name'];
@@ -26,14 +36,14 @@ $mail = new PHPMailer(true);
 		$mail->isSMTP();                                            //Send using SMTP
 		$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
 		$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-		$mail->Username   = 'anantgaming999@gmail.com';                     //SMTP username
-		$mail->Password   = 'wrexdtrnglukgsdw';                               //SMTP password
+		$mail->Username   = $mailConfig['smtp_username'];                     //SMTP username
+		$mail->Password   = $mailConfig['smtp_password'];                               //SMTP password
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
 		$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 		//Recipients
-		$mail->setFrom('anantgaming999@gmail.com', 'CONTACTED');
-		$mail->addAddress('anant.mvbhatnagar@gmail.com', 'ANANT');     //Add a recipient
+		$mail->setFrom($mailConfig['smtp_username'], 'CONTACTED');
+		$mail->addAddress($mailConfig['to_email'], $mailConfig['to_name']);     //Add a recipient
 
 		//Content
 		$mail->isHTML(true);                                  //Set email format to HTML

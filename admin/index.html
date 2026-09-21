@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin - Projects</title>
+<link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body class="admin-body">
+
+    <!-- Connect screen -->
+    <div class="admin-center" id="connect-screen" style="display:none;">
+        <form class="admin-card admin-login-card" id="connect-form" autocomplete="off">
+            <h1>Connect to GitHub</h1>
+            <p class="admin-hint" style="margin-top:-0.5rem;">
+                This admin panel edits your portfolio directly via the GitHub API — no server required.
+                You need a Personal Access Token scoped to just this repository.
+            </p>
+            <p id="connect-error" class="admin-alert admin-alert-error" style="display:none;"></p>
+
+            <label>
+                GitHub repo owner
+                <input type="text" id="cfg-owner" required placeholder="e.g. ig-crysis" />
+            </label>
+            <label>
+                Repo name
+                <input type="text" id="cfg-repo" required placeholder="e.g. Portfolio" />
+            </label>
+            <label>
+                Branch
+                <input type="text" id="cfg-branch" required value="main" />
+            </label>
+            <label>
+                Personal Access Token
+                <input type="password" id="cfg-token" required placeholder="github_pat_..." />
+            </label>
+
+            <button type="submit" class="admin-btn admin-btn-primary" id="connect-submit">Connect</button>
+
+            <details class="admin-help">
+                <summary>How do I get a token?</summary>
+                <ol>
+                    <li>Go to <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+                    <li>Name it anything, e.g. "Portfolio Admin"</li>
+                    <li>Under <strong>Repository access</strong>, choose "Only select repositories" and pick this repo</li>
+                    <li>Under <strong>Permissions → Repository permissions</strong>, set <strong>Contents</strong> to "Read and write"</li>
+                    <li>Generate the token and paste it above. It's only shown once by GitHub — copy it now</li>
+                    <li>It's saved only in this browser (localStorage), never anywhere else</li>
+                </ol>
+            </details>
+        </form>
+    </div>
+
+    <!-- Dashboard screen -->
+    <div class="admin-wrap" id="dashboard-screen" style="display:none;">
+        <header class="admin-topbar">
+            <h1>Projects</h1>
+            <nav class="admin-topnav">
+                <button type="button" class="admin-btn admin-btn-primary" id="btn-add">+ Add Project</button>
+                <a href="../index.html" class="admin-btn" target="_blank">View Site</a>
+                <button type="button" class="admin-btn admin-btn-danger" id="btn-disconnect">Disconnect</button>
+            </nav>
+        </header>
+
+        <p id="dashboard-status" class="admin-alert" style="display:none;"></p>
+
+        <p class="admin-hint">
+            "Featured" = shown in <strong>Recent Projects</strong> on the homepage. "Published" = shown at all on the
+            <strong>Works</strong> page. Every change here creates a real commit and pushes live in about a minute.
+        </p>
+
+        <div class="admin-project-list" id="project-list">
+            <p>Loading…</p>
+        </div>
+    </div>
+
+    <!-- Editor screen -->
+    <div class="admin-wrap admin-wrap-narrow" id="editor-screen" style="display:none;">
+        <header class="admin-topbar">
+            <h1 id="editor-title">Add Project</h1>
+            <nav class="admin-topnav">
+                <button type="button" class="admin-btn" id="btn-back">← Back</button>
+            </nav>
+        </header>
+
+        <p id="editor-error" class="admin-alert admin-alert-error" style="display:none;"></p>
+        <p id="editor-status" class="admin-alert admin-alert-success" style="display:none;"></p>
+
+        <form class="admin-card admin-form" id="editor-form">
+            <label>
+                Title
+                <input type="text" id="f-title" required />
+            </label>
+            <label>
+                Tag / badge text <span class="admin-muted">(e.g. "Full-Stack | LMS | CMS")</span>
+                <input type="text" id="f-tag" />
+            </label>
+            <label>
+                Description <span class="admin-muted">(shown on the Works page)</span>
+                <textarea id="f-description" rows="3"></textarea>
+            </label>
+            <label>
+                Link (project URL)
+                <input type="url" id="f-link" required placeholder="https://" />
+            </label>
+            <label>
+                Link button label
+                <input type="text" id="f-linklabel" placeholder="Visit Site" />
+            </label>
+            <label>
+                Upload image / GIF <span class="admin-muted">(max 5MB)</span>
+                <input type="file" id="f-image-file" accept=".jpg,.jpeg,.png,.gif,.webp,.svg" />
+            </label>
+            <label>
+                ...or image path / URL <span class="admin-muted">(used if no file is uploaded above)</span>
+                <input type="text" id="f-image-url" placeholder="assets/img/projects/example.png" />
+            </label>
+            <img id="f-image-preview" class="admin-preview" style="display:none;" alt="" />
+            <label class="admin-checkbox">
+                <input type="checkbox" id="f-featured" />
+                Featured (show in Recent Projects on the homepage)
+            </label>
+            <label class="admin-checkbox">
+                <input type="checkbox" id="f-published" checked />
+                Published (show on the Works page)
+            </label>
+            <button type="submit" class="admin-btn admin-btn-primary" id="editor-submit">Save</button>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

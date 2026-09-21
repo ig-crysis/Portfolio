@@ -1,0 +1,112 @@
+{
+    "projects": [
+        {
+            "title": "Unthinkable-MSR",
+            "tag": "Full-Stack | AI Integration | Speech-to-Text",
+            "description": "Built an AI-Meeting Summarizer for Unthinkable Solutions Campus recruitment assessment.",
+            "image": "assets/img/projects/unthinkgif-dc651682.gif",
+            "link": "https://unthink-meetiq.centralindia.cloudapp.azure.com/",
+            "linkLabel": "Visit Site",
+            "featured": true,
+            "published": true,
+            "id": "unthinkable-msr",
+            "order": 1
+        },
+        {
+            "title": "AI-Sustainability Copilot",
+            "tag": "Full-Stack | AI/ML | Agentic AI | GenAI",
+            "description": "AI-powered carbon footprint estimator combining a trained ML model with an LLM agent for personalized, real-time sustainability insights.",
+            "image": "assets/img/projects/asclow-0331d8e3.gif",
+            "link": "https://ai-sustainability-copilot.vercel.app/",
+            "linkLabel": "Visit Site",
+            "featured": true,
+            "published": true,
+            "id": "ai-sustainability-copilot",
+            "order": 2
+        },
+        {
+            "id": "dobby-leashed",
+            "title": "Dobby Leashed",
+            "tag": "Manual AI Deployment",
+            "description": "A manually deployed GenAI experiment.",
+            "image": "assets/img/dobby.gif",
+            "link": "https://ig-crysis.github.io/Portfolio/blog1.html",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "order": 3
+        },
+        {
+            "title": "MedSecure",
+            "tag": "Full-Stack | AI/ML",
+            "description": "AI-powered healthcare platform for personalized health insights, secure medical records, and real-time patient-provider communication.",
+            "image": "assets/img/projects/medsecure-3ad32ead.png",
+            "link": "https://github.com/ig-crysis/Hack-a-thon",
+            "linkLabel": "Github",
+            "featured": false,
+            "published": true,
+            "id": "medsecure",
+            "order": 4
+        },
+        {
+            "title": "Custom Birthday Website for HER!!!",
+            "tag": "ahh nothing to see here...",
+            "description": "just made a custome birthday website... ;) PASS:1008",
+            "image": "assets/img/projects/projgiffcomp-bbc1870e.gif",
+            "link": "https://ritikabday.anant-portfolio.me/",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "id": "custom-birthday-website-for-her",
+            "order": 5
+        },
+        {
+            "id": "decoding-js",
+            "title": "Decoding JS",
+            "tag": "Full-Stack | LMS | CMS",
+            "description": "Explore the courses and understand why your code always breaks on Monday.",
+            "image": "assets/img/project-4.png",
+            "link": "https://decoding-js.onrender.com/",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "order": 6
+        },
+        {
+            "id": "weather-application",
+            "title": "Weather Application - API Integration,Tailwind Implementation",
+            "tag": "API Usage | Tailwind Design",
+            "description": "API Usage | Tailwind Design",
+            "image": "assets/img/project-1.png",
+            "link": "https://ig-crysis.github.io/Weather-Application/",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "order": 7
+        },
+        {
+            "id": "cpp-projects",
+            "title": "C++ Projects",
+            "tag": "C++ | Some Academic Projects",
+            "description": "C++ | Some Academic Projects",
+            "image": "assets/img/C++.webp",
+            "link": "https://github.com/ig-crysis/C-Projectes",
+            "linkLabel": "Visit Repo",
+            "featured": false,
+            "published": true,
+            "order": 8
+        },
+        {
+            "id": "car-game",
+            "title": "Car Game - Basic CarGame built with JS",
+            "tag": "JavaScript | Development",
+            "description": "JavaScript | Development",
+            "image": "assets/img/Project-2.gif",
+            "link": "https://ig-crysis.github.io/Car-Game/",
+            "linkLabel": "Try Game",
+            "featured": false,
+            "published": true,
+            "order": 9
+        }
+    ]
+}
