@@ -22,7 +22,7 @@
             "featured": true,
             "published": true,
             "id": "ai-sustainability-copilot",
-            "order": 2
+            "order": 3
         },
         {
             "title": "Parikiya Organics Ecommerce Website",
@@ -34,7 +34,7 @@
             "featured": true,
             "published": true,
             "id": "parikiya-organics-ecommerce-website",
-            "order": 3
+            "order": 2
         },
         {
             "id": "dobby-leashed",
@@ -61,18 +61,6 @@
             "order": 5
         },
         {
-            "title": "Custom Birthday Website for HER!!!",
-            "tag": "ahh nothing to see here...",
-            "description": "just made a custome birthday website... ;) PASS:1008",
-            "image": "assets/img/projects/projgiffcomp-bbc1870e.gif",
-            "link": "https://ritikabday.anant-portfolio.me/",
-            "linkLabel": "Visit Site",
-            "featured": false,
-            "published": true,
-            "id": "custom-birthday-website-for-her",
-            "order": 7
-        },
-        {
             "id": "decoding-js",
             "title": "Decoding JS",
             "tag": "Full-Stack | LMS | CMS",
@@ -83,6 +71,18 @@
             "featured": false,
             "published": true,
             "order": 6
+        },
+        {
+            "title": "Custom Birthday Website for HER!!!",
+            "tag": "ahh nothing to see here...",
+            "description": "just made a custome birthday website... ;) PASS:1008",
+            "image": "assets/img/projects/projgiffcomp-bbc1870e.gif",
+            "link": "https://ritikabday.anant-portfolio.me/",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "id": "custom-birthday-website-for-her",
+            "order": 7
         },
         {
             "id": "weather-application",
