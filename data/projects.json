@@ -13,18 +13,6 @@
             "order": 1
         },
         {
-            "title": "AI-Sustainability Copilot",
-            "tag": "Full-Stack | AI/ML | Agentic AI | GenAI",
-            "description": "AI-powered carbon footprint estimator combining a trained ML model with an LLM agent for personalized, real-time sustainability insights.",
-            "image": "assets/img/projects/asclow-0331d8e3.gif",
-            "link": "https://ai-sustainability-copilot.vercel.app/",
-            "linkLabel": "Visit Site",
-            "featured": true,
-            "published": true,
-            "id": "ai-sustainability-copilot",
-            "order": 3
-        },
-        {
             "title": "Parikiya Organics Ecommerce Website",
             "tag": "Full-Stack | E-Commerce | Payment Integration",
             "description": "A live D2C organic store with a no-code admin for the seller: products, orders, homepage and coupons. Razorpay payments, branded Gmail order emails, Cloudinary uploads, deployed on Netlify.",
@@ -35,6 +23,18 @@
             "published": true,
             "id": "parikiya-organics-ecommerce-website",
             "order": 2
+        },
+        {
+            "title": "AI-Sustainability Copilot",
+            "tag": "Full-Stack | AI/ML | Agentic AI | GenAI",
+            "description": "AI-powered carbon footprint estimator combining a trained ML model with an LLM agent for personalized, real-time sustainability insights.",
+            "image": "assets/img/projects/asclow-0331d8e3.gif",
+            "link": "https://ai-sustainability-copilot.vercel.app/",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "id": "ai-sustainability-copilot",
+            "order": 3
         },
         {
             "id": "dobby-leashed",
