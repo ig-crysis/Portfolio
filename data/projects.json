@@ -115,7 +115,7 @@
             "link": "http://parikiyaorganics.netlify.app/",
             "linkLabel": "Visit Site",
             "image": "assets/img/projects/parikiyaorganics-5e852db4.png",
-            "featured": false,
+            "featured": true,
             "published": true,
             "id": "parikiya-organics-ecommerce-website",
             "order": 10
