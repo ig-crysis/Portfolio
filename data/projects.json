@@ -94,6 +94,18 @@
             "linkLabel": "Visit Repo",
             "featured": false,
             "published": true,
+            "order": 9
+        },
+        {
+            "title": "Parikiya Organics Ecommerce Website",
+            "tag": "Full-Stack | E-Commerce | Payment Integration",
+            "description": "A live D2C organic store with a no-code admin for the seller: products, orders, homepage and coupons. Razorpay payments, branded Gmail order emails, Cloudinary uploads, deployed on Netlify.",
+            "link": "http://parikiyaorganics.netlify.app/",
+            "linkLabel": "Visit Site",
+            "image": "assets/img/projects/parikiyaorganics-1d589e1f.png",
+            "featured": true,
+            "published": true,
+            "id": "parikiya-organics-ecommerce-website",
             "order": 8
         },
         {
@@ -107,18 +119,6 @@
             "featured": false,
             "published": true,
             "order": 10
-        },
-        {
-            "title": "Parikiya Organics Ecommerce Website",
-            "tag": "Full-Stack | E-Commerce | Payment Integration",
-            "description": "A live D2C organic store with a no-code admin for the seller: products, orders, homepage and coupons. Razorpay payments, branded Gmail order emails, Cloudinary uploads, deployed on Netlify.",
-            "link": "http://parikiyaorganics.netlify.app/",
-            "linkLabel": "Visit Site",
-            "image": "assets/img/projects/parikiyaorganics-1d589e1f.png",
-            "featured": true,
-            "published": true,
-            "id": "parikiya-organics-ecommerce-website",
-            "order": 9
         }
     ]
 }
