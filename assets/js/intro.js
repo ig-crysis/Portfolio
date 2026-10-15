@@ -1,16 +1,25 @@
 (function () {
+    var STORAGE_KEY = 'introChoiceMade';
+
     var overlay = document.getElementById('intro-overlay');
     if (!overlay) return;
 
+    var choiceScreen = document.getElementById('choice-screen');
+    var videoScreen = document.getElementById('video-screen');
     var video = document.getElementById('intro-video');
     var skipBtn = document.getElementById('intro-skip');
-    var unmuteBtn = document.getElementById('intro-unmute');
+    var introBtn = document.getElementById('choice-intro');
+    var dashboardBtn = document.getElementById('choice-dashboard');
     var html = document.documentElement;
+
+    function markChosen() {
+        try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) { /* ignore */ }
+    }
 
     function hideOverlay() {
         if (!overlay || overlay.dataset.hidden === '1') return;
         overlay.dataset.hidden = '1';
-        try { sessionStorage.setItem('introPlayed', '1'); } catch (e) { /* ignore */ }
+        markChosen();
         overlay.classList.add('intro-hidden');
         html.classList.remove('intro-lock');
         window.setTimeout(function () {
@@ -20,28 +29,38 @@
         }, 1050);
     }
 
-    html.classList.add('intro-lock');
+    function playIntro() {
+        markChosen();
+        if (!video) { hideOverlay(); return; }
 
-    if (skipBtn) {
-        skipBtn.addEventListener('click', hideOverlay);
-    }
+        choiceScreen.style.display = 'none';
+        videoScreen.style.display = 'block';
 
-    if (unmuteBtn && video) {
-        unmuteBtn.addEventListener('click', function () {
-            video.muted = !video.muted;
-            unmuteBtn.textContent = video.muted ? '🔇 Unmute' : '🔊 Mute';
-        });
-    }
-
-    if (video) {
         video.addEventListener('ended', hideOverlay);
         video.addEventListener('error', hideOverlay);
-        // If the video file isn't available yet (e.g. not uploaded), don't
-        // trap visitors behind a black screen.
+
+        // Triggered by a direct click, so browsers allow unmuted autoplay here.
+        video.muted = false;
+        var playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+            playPromise.catch(function () {
+                // Some browsers may still block unmuted playback; fall back
+                // to muted rather than leaving the visitor stuck.
+                video.muted = true;
+                video.play().catch(hideOverlay);
+            });
+        }
+
+        // Safety net: if the file never starts loading (missing/slow), don't
+        // trap the visitor on a black screen indefinitely.
         window.setTimeout(function () {
             if (video.readyState === 0) hideOverlay();
-        }, 4000);
-    } else {
-        hideOverlay();
+        }, 8000);
     }
+
+    html.classList.add('intro-lock');
+
+    if (introBtn) introBtn.addEventListener('click', playIntro);
+    if (dashboardBtn) dashboardBtn.addEventListener('click', hideOverlay);
+    if (skipBtn) skipBtn.addEventListener('click', hideOverlay);
 })();

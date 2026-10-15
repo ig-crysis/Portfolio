@@ -1,0 +1,26 @@
+/* Hand-written overrides for the header nav on phones.
+   Written as plain CSS (not Tailwind utility classes) because style.css is a
+   pre-purged Tailwind build with no build step available in this project —
+   any new Tailwind class not already present in that file silently does
+   nothing. Load this file AFTER style.css so these rules win on ties. */
+@media (max-width: 639px) {
+    .logo-wordmark {
+        display: none;
+    }
+    .logo-link {
+        gap: 0.4rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    .nav-label {
+        display: none;
+    }
+    .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .nav-icon {
+        height: 1.15rem;
+        width: 1.15rem;
+    }
+}
