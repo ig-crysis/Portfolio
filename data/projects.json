@@ -25,18 +25,6 @@
             "order": 2
         },
         {
-            "id": "dobby-leashed",
-            "title": "Dobby Leashed",
-            "tag": "Manual AI Deployment",
-            "description": "A manually deployed GenAI experiment.",
-            "image": "assets/img/dobby.gif",
-            "link": "https://ig-crysis.github.io/Portfolio/blog1.html",
-            "linkLabel": "Visit Site",
-            "featured": false,
-            "published": true,
-            "order": 4
-        },
-        {
             "title": "Parikiya Organics Ecommerce Website",
             "tag": "Full-Stack | E-Commerce | Payment Integration",
             "description": "A live D2C organic store with a no-code admin for the seller: products, orders, homepage and coupons. Razorpay payments, branded Gmail order emails, Cloudinary uploads, deployed on Netlify.",
@@ -47,6 +35,18 @@
             "published": true,
             "id": "parikiya-organics-ecommerce-website",
             "order": 3
+        },
+        {
+            "id": "dobby-leashed",
+            "title": "Dobby Leashed",
+            "tag": "Manual AI Deployment",
+            "description": "A manually deployed GenAI experiment.",
+            "image": "assets/img/dobby.gif",
+            "link": "https://ig-crysis.github.io/Portfolio/blog1.html",
+            "linkLabel": "Visit Site",
+            "featured": false,
+            "published": true,
+            "order": 4
         },
         {
             "title": "MedSecure",
@@ -70,7 +70,7 @@
             "featured": false,
             "published": true,
             "id": "custom-birthday-website-for-her",
-            "order": 6
+            "order": 7
         },
         {
             "id": "decoding-js",
@@ -82,7 +82,7 @@
             "linkLabel": "Visit Site",
             "featured": false,
             "published": true,
-            "order": 7
+            "order": 6
         },
         {
             "id": "weather-application",
