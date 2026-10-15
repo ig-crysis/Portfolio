@@ -106,7 +106,7 @@
             "linkLabel": "Try Game",
             "featured": false,
             "published": true,
-            "order": 9
+            "order": 10
         },
         {
             "title": "Parikiya Organics Ecommerce Website",
@@ -118,7 +118,7 @@
             "featured": true,
             "published": true,
             "id": "parikiya-organics-ecommerce-website",
-            "order": 10
+            "order": 9
         }
     ]
 }
